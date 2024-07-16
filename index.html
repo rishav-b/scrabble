@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Scrabble</title>
+        <link rel="stylesheet" href="style.css">
+        <script src = "script.js"></script>
+      </head>
+      <body>
+        <center>
+            <h1>Scrabble Website <a href = tutorial.html>(Tutorial)</a></h1>
+            <p>Number of players</p><input type = "number" id = "players" class = "hehe" min = "1" max = "4"> <br> <br>
+            <input type = "submit" onClick = "game()" value = "Start Game">
+        </center>
+        
+        <center>
+            <div class = "poop">
+                
+                <div id = "scores"></div>    
+                <div class = "doop">
+                
+                    <wrapper><p>Word</p><input type = "text" id = "word"></wrapper>
+    
+                    <p>Scheme</p><input type = "text" id = "scheme"> 
+                    <br><br>
+                    <input type="submit" onClick="score()" value="Submit"> 
+                
+    
+                    <div id = "received_word"></div>
+                    <div id = "received_scheme"></div>
+                
+                </div>
+    
+                <div class = "doop">
+                    
+                    <div id = "output" class = "o">
+                    </div>
+                    <div id = "individual_points" class = "debug"></div>
+                    
+                    
+                    <div id = 'points'></div>
+                    <div id = 'points_array'></div>
+                
+                </div>
+            </div>
+        <br><br>
+        <p>Controls</p><button type = "sumbit" onclick = "add_points()" value = "Add Points">Add Points</button>
+                    <button type = "submit" onclick = "update_score()" value = "Update Score">Update Scoreboard</button>
+                    <button type = "sumbit" onclick = "switch_player()" value = "Next Player">Next Player</button>
+                    
+        <br>
+        <br>
+        <br>
+        <p>Scoreboard</p>
+        <center>
+            <div class = "parent">
+                <div class = "child 0">
+                    <div id = "0_score"></div>
+                 
+                    <div id = "0_name"></div>
+                </div>
+                <div class = "child 1">
+                    <div id = "1_score"></div>
+    
+                    <div id = "1_name"></div>
+                </div>
+                <div class = "child 2">
+                    <div id = "2_score"></div>
+             
+                    <div id = "2_name"></div>
+                </div>
+                <div class = "child 3">
+                    <div id = "3_score"></div>
+                 
+                    <div id = "3_name"></div>
+                </div>
+    
+            </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+            <button class = "confetti-button" onclick="confetti(); end_game(); confetti()">End Game</button>
+            
+            
+        </center>
+        
+            
+        
+        
+      </body>
+</html>

@@ -1,0 +1,195 @@
+@font-face {
+    font-family: mySans;
+    src: url(ReithSans.woff);
+}
+
+body {
+    padding-top: 15px;
+    background-image: url("scrabble.svg");
+    background-position: center; 
+  
+}
+
+a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004bad3f;
+}
+
+button {
+    font-family: mySans;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d3d3d3;
+    margin: 5px;
+}
+
+.box {
+    background-image: url("calculator.svg");
+}
+
+button:hover {
+    background-color: #004bad3f;
+}
+
+.poop {
+    display: flex;
+    width: 50%;
+}
+
+.parent {
+    display: flex;
+    flex: 1;
+    width: 50%;
+}
+.tutorial {
+    text-align: left;
+    max-width: 800px;
+}
+.secret {
+    color: white;
+    font-family: mySans;
+}
+.child {
+    flex: 3;
+    font-family: mySans;
+    font-size: 250%;
+}
+
+.debug {
+    font-family: mySans;
+}
+
+.hehe {
+    border: 2px solid #d3d3d3;
+    border-radius: 4px;
+    font-family: mySans;
+    width: 80px;
+    height: 20px;
+    font-size: 30px;
+    padding: 10px
+}
+
+.doop {
+    flex: 1;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    font-family: mySans;
+    font-size: 25px;
+}
+
+.o {
+    font-family: mySans;
+    font-weight: 800;
+    font-size: 150px;
+    padding-top: 30px;
+}
+
+h1 {
+    font-family: mySans;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    box-shadow: #004aad;
+}
+
+
+h2 {
+    font-family: mySans;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    font-weight: lighter;
+}
+
+input[type=text] {
+    border: 2px solid #d3d3d3;
+    border-radius: 4px;
+    text-align: center;
+    font-family: mySans;
+    width: 80%;
+    height: 20px;
+    font-size: 30px;
+    padding: 10px
+}
+
+input {
+    text-align: center;
+}
+input[type=text]:focus {
+    border-color: #004aad;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    font-family: mySans;
+    background-color: #d3d3d3;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    font-family: mySans;
+    background-color: #004bad3f;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+.hide {
+    display: none;
+}
+      
+.myDIV:hover + .hide {
+    display: block;
+    color: black;
+    font-family: mySans;
+}
+
+.myDIV {
+    font-family: mySans;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.myDIV2 {
+    font-family: mySans;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.hide2 {
+    display: none;
+}
+          
+.myDIV2:hover + .hide2 {
+    display: block;
+    color: black;
+    font-family: mySans;
+}
+
+@media only screen and (max-width: 1160px) {
+    body {
+        background-color: white;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .o {
+        font-size: 120px;
+    }
+
+}
